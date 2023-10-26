@@ -1,0 +1,34 @@
+﻿<Window x:Class="TriangleForTesting.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TriangleForTesting"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFFFC4C4"/>
+                <GradientStop Color="#FFF977FF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Btn" Grid.Column="1" Content="Calculate" Grid.Row="2" Background="#FFFF99DE" Height="40" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#7F54003B" BorderThickness="0,0,1,2" FontFamily="Arial Nova" FontSize="24" Click="btn_clicked" IsDefault="True" Foreground="#FF54003B"/>
+        <TextBox x:Name="TxtA" MaxLength="9" Grid.Column="0" HorizontalAlignment="Center" Grid.Row="1" Text="" VerticalAlignment="Bottom" TextWrapping="Wrap" Width="200" Height="40" FontFamily="Arial Nova" FontSize="24" Background="White" TextAlignment="Center" Foreground="#FF54003B"/>
+        <TextBox x:Name="TxtB" MaxLength="9" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" Text="" VerticalAlignment="Bottom" TextWrapping="Wrap" Width="200" Height="40" FontFamily="Arial Nova" FontSize="24" TextAlignment="Center" Foreground="#FF54003B"/>
+        <TextBox x:Name="TxtC" MaxLength="9" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="1" Text="" VerticalAlignment="Bottom" TextWrapping="Wrap" Width="200" Height="40" FontFamily="Arial Nova" FontSize="24" TextAlignment="Center" Foreground="#FF54003B"/>
+
+        <Label x:Name="Lbl" Content="Enter the sides of the triangle" HorizontalAlignment="Center" VerticalAlignment="Bottom" RenderTransformOrigin="1.129,2.095" FontFamily="Arial Nova" FontSize="28" Grid.ColumnSpan="3" Foreground="#FF54003B"/>
+
+    </Grid>
+</Window>
